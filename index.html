@@ -2,102 +2,297 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Concepts | Moya Schell</title>
-  <style>
-    body {
-      margin: 0;
-      background: #0a0a0a;
-      color: white;
-      font-family: system-ui, -apple-system, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-
-    h1 {
-      margin-bottom: 3rem;
-      font-weight: 300;
-      letter-spacing: 2px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      width: min(1000px, 100% - 4rem);
-    }
-
-    .card {
-      display: block;
-      padding: 2.5rem;
-      text-decoration: none;
-      border: 1px solid #333;
-      border-radius: 12px;
-      transition: all 0.2s ease;
-      background: #111;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: #777;
-      background: #1a1a1a;
-    }
-
-    h2 {
-      margin: 0 0 0.5rem;
-      font-size: 1.5rem;
-      color: #fff;
-    }
-
-    p {
-      color: #888;
-      font-size: 0.9rem;
-      line-height: 1.5;
-    }
-
-    .tag {
-      display: inline-block;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      padding: 4px 8px;
-      border-radius: 4px;
-      margin-bottom: 1rem;
-      background: #222;
-      color: #aaa;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moya Schell | Film & Production</title>
+  <meta name="description"
+    content="Portfolio of Moya Schell, film student and production professional specializing in editing, camera work, and on-set production." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <div class="brand-initials">MS</div>
+        <div class="brand-text">
+          <h1 class="brand-name">Moya Schell</h1>
+          <p class="brand-tagline">Film Student · Editor · Producer</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <h1>Select a Portfolio Style</h1>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Storytelling through film and live production.</h2>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View Selected Work</a>
+            <a href="#contact" class="btn ghost">Get in Touch</a>
+          </div>
+          <div class="hero-meta">
+            <span>Based in Burbank, CA</span>
+            <span>Open to internships & freelance</span>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- Replace src with an exported headshot or still frame -->
+          <div class="hero-photo-frame">
+            <img src="assets/moya-headshot.jpg" alt="Moya Schell" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="grid">
-    <a href="portfolio-a.html" class="card">
-      <span class="tag">Option A</span>
-      <h2>Classic Dark</h2>
-      <p>Clean, professional, and dark-themed. Features soft gradients and a modern layout.</p>
-    </a>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h3>About</h3>
+          <p>A quick snapshot of your journey into film and what drives you on set.</p>
+        </div>
+        <div class="grid-2">
+          <div>
+            <p>
+              Moya Schell is a 4th-year film student at Woodbury University and a current Resident Assistant. She was an
+              Entertainment Development Intern at Roddenberry Entertainment in the summer of 2025. She also interned in
+              the Disney College Program from 2023-2024, making magic in the Animal Kingdom parking lot. She has
+              experience
+              with sports camera operation, Xpression, and Show Control, gained from her work with Monta naPBS at
+              Montana
+              State University.
 
-    <a href="portfolio-b.html" class="card" style="background: #fdfdfd; border-color: #eee;">
-      <span class="tag" style="background:#eee; color:#333;">Option B</span>
-      <h2 style="color: #111; font-family: 'Courier New', monospace;">Screenplay</h2>
-      <p style="color: #555;">Minimalist, light theme inspired by film scripts. Structured and typographic.</p>
-    </a>
+              Besides being a student, Moya is a member of Icon Winter Guard, Women in Film, and the SFV Knitting Guild.
+              She was also a Choreographer for the Montana State Spirit of the West Color Guard.
+            </p>
+          </div>
+          <div class="about-meta">
+            <div class="meta-item">
+              <span class="meta-label">Education</span>
+              <span class="meta-value">B.A. Film & Video Production, Woodbury University</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Current role</span>
+              <span class="meta-value">Resident Assistant · Full-time student</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Interests</span>
+              <span class="meta-value">Editing, sports broadcasting, on-set production, storytelling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <a href="portfolio-c.html" class="card" style="background: #000; border: 1px solid #333;">
-      <span class="tag" style="background:#111; color:#0f0; border:1px solid #333;">Option C</span>
-      <h2 style="color: #fff; font-family: 'Impact', sans-serif; text-transform: uppercase;">Director</h2>
-      <p style="color: #ccc;">High contrast, neon accents, and bold typography. A dynamic, "loud" aesthetic.</p>
-    </a>
-  </div>
+    <!-- Experience -->
+    <!--section class="section alt" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <h3>Experience</h3>
+          <p>Professional and on‑set roles that shaped how I work with crews and audiences.</p>
+        </div>
 
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-title">Resident Assistant</span>
+              <span class="timeline-org">Woodbury University</span>
+            </div>
+            <div class="timeline-body">
+              <span class="timeline-dates">Jan 2025 – Present</span>
+              <p>
+                Insert 2–3 bullet‑style sentences about leadership, conflict resolution,
+                community building, and event planning relevant to production.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-title">Video Production Assistant</span>
+              <span class="timeline-org">MontanaPBS / ESPN+</span>
+            </div>
+            <div class="timeline-body">
+              <span class="timeline-dates">Nov 2021 – Dec 2022</span>
+              <p>
+                Describe work on live sports broadcasts: camera operation, graphics (Xpression),
+                research, and collaborating with the control room under time pressure.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-title">Parking Operations</span>
+              <span class="timeline-org">Walt Disney World</span>
+            </div>
+            <div class="timeline-body">
+              <span class="timeline-dates">Jan 2023 – Jan 2024</span>
+              <p>
+                Highlight guest interaction, safety, communication, and working in a
+                fast‑paced environment that translates well to film sets.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section-->
+
+    <!-- Projects / Work -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h3>Selected Work</h3>
+          <p>Short films and productions I’ve contributed to as director, editor, or crew.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Undone -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="assets/undone.jpg" alt="Undone - Film Still" />
+            </div>
+            <div class="project-body">
+              <h4>Undone</h4>
+              <p class="project-role">Writer | Director | Producer | Editor</p>
+              <p class="project-description">
+                Luella believes she is a victim of the “sweater curse” and that she’ll never find love. Her best friend
+                Sawyer helps her move on from the past.
+              </p>
+              <div class="project-links">
+                <a href="#">Watch</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Offline -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="assets/offline.jpg" alt="Offline - Film Still" />
+            </div>
+            <div class="project-body">
+              <h4>Offline</h4>
+              <p class="project-role">Producer | Unit Production Manager</p>
+              <p class="project-description">
+                Andie, a streamer, realizes the danger has stepped out of her screen and into her home. She must turn
+                her
+                fear into courage to survive.
+              </p>
+              <div class="project-links">
+                <a href="#">Watch</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kingsblood -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="assets/kingsblood.jpg" alt="Kingsblood - Film Still" />
+            </div>
+            <div class="project-body">
+              <h4>Kingsblood</h4>
+              <p class="project-role">Producer | Unit Production Manager</p>
+              <p class="project-description">
+                Markus Miguel King, a troubled teen from a pious upbringing, is the prime suspect in the murder of his
+                family. He has very little time to prove his innocence.
+              </p>
+              <div class="project-links">
+                <a href="#">Watch</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section alt" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h3>Skills</h3>
+          <p>Tools and strengths I bring to every production.</p>
+        </div>
+        <div class="grid-3">
+          <div class="pill-group">
+            <h4>Production</h4>
+            <div class="pill-row">
+              <span class="pill">On‑set coordination</span>
+              <span class="pill">Assistant directing</span>
+              <span class="pill">Live broadcast</span>
+            </div>
+          </div>
+          <div class="pill-group">
+            <h4>Technical</h4>
+            <div class="pill-row">
+              <span class="pill">Camera operation</span>
+              <span class="pill">Lighting</span>
+              <span class="pill">Xpression graphics</span>
+              <span class="pill">Show Control</span>
+              <span class="pill">Adobe Premiere Pro</span>
+            </div>
+          </div>
+          <div class="pill-group">
+            <h4>People</h4>
+            <div class="pill-row">
+              <span class="pill">Team communication</span>
+              <span class="pill">Guest experience</span>
+              <span class="pill">Problem‑solving</span>
+              <span class="pill">Leadership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h3>Contact</h3>
+          <p>For projects, collaborations, or questions, reach out using the links below.</p>
+        </div>
+        <div class="contact-grid">
+          <div>
+          </div>
+          <div class="contact-details">
+            <a href="mailto:moyam26@gmail.com" class="contact-link">moyam26@gmail.com</a>
+            <p>972-400-6939</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Moya Schell</span>
+      <span> | Built with GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 
 </html>

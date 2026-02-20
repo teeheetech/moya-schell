@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Concepts | Moya Schell</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0a0a0a;
+      color: white;
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 3rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      width: min(1000px, 100% - 4rem);
+    }
+
+    .card {
+      display: block;
+      padding: 2.5rem;
+      text-decoration: none;
+      border: 1px solid #333;
+      border-radius: 12px;
+      transition: all 0.2s ease;
+      background: #111;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #777;
+      background: #1a1a1a;
+    }
+
+    h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    p {
+      color: #888;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      background: #222;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Select a Portfolio Style</h1>
+
+  <div class="grid">
+    <a href="portfolio-a.html" class="card">
+      <span class="tag">Option A</span>
+      <h2>Classic Dark</h2>
+      <p>Clean, professional, and dark-themed. Features soft gradients and a modern layout.</p>
+    </a>
+
+    <a href="portfolio-b.html" class="card" style="background: #fdfdfd; border-color: #eee;">
+      <span class="tag" style="background:#eee; color:#333;">Option B</span>
+      <h2 style="color: #111; font-family: 'Courier New', monospace;">Screenplay</h2>
+      <p style="color: #555;">Minimalist, light theme inspired by film scripts. Structured and typographic.</p>
+    </a>
+
+    <a href="portfolio-c.html" class="card" style="background: #000; border: 1px solid #333;">
+      <span class="tag" style="background:#111; color:#0f0; border:1px solid #333;">Option C</span>
+      <h2 style="color: #fff; font-family: 'Impact', sans-serif; text-transform: uppercase;">Director</h2>
+      <p style="color: #ccc;">High contrast, neon accents, and bold typography. A dynamic, "loud" aesthetic.</p>
+    </a>
+  </div>
+
+</body>
+
+</html>
